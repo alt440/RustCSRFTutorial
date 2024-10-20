@@ -1,0 +1,10 @@
+[package]
+name = "RustCSRFTutorial"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = "0.6"
+tokio = { version = "1", features = ["full"] }
+rand = "0.8" # For CSRF token generation
+tower = "0.4" # For middleware
